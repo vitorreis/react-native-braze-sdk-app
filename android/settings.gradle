@@ -1,3 +1,6 @@
 rootProject.name = 'AppWithBrazeSDK'
 
 include ':app'
+
+include ':react-native-appboy-sdk'
+project(':react-native-appboy-sdk').projectDir = new File(settingsDir, '../node_modules/react-native-appboy-sdk/android')
