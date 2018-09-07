@@ -107,6 +107,19 @@ android {
             abiFilters "armeabi-v7a", "x86"
         }
     }
+
+    flavorDimensions "version"
+    productFlavors {
+        free {
+            dimension "version"
+            applicationId 'com.appwithbrazesdk.free'
+        }
+        paid {
+            dimension "version"
+            applicationId 'com.appwithbrazesdk.paid'
+        }
+    }
+
     splits {
         abi {
             reset()
